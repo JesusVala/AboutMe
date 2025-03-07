@@ -1,8 +1,7 @@
 //import { useState } from "react";
-import "./css/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { LandingPage } from "./pages/LandingPage.tsx";
-import { AnotherRoute } from "./pages/AnotherRoute.tsx";
+import LandingPage from "./pages/LandingPage/LandingPage.tsx";
+import AnotherRoute from "./pages/TestPage/AnotherRoute.tsx";
 
 
 function App() {

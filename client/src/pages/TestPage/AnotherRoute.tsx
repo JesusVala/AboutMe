@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../css/App.css";
 
-function LandingPage() {
+
+function AnotherPage() {
   const [count, setCount] = useState(0);
 
   return (
@@ -14,7 +14,7 @@ function LandingPage() {
           <img src="/react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>This should be the landing page</h1>
+      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count: number) => count + 1)}>
           count is {count}
@@ -30,4 +30,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default AnotherPage;
