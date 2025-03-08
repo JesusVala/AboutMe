@@ -21,7 +21,7 @@ jobs:
       - name: Setup Deno environment
         uses: denoland/setup-deno@v2
 
-      - name: Build site
+      - name: Build dist
         run: deno task build
 
       - name: Setup Pages
