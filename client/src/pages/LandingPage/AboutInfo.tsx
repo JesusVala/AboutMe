@@ -1,8 +1,26 @@
+import { useEffect, useRef } from "react";
+import { TextEvolutionAnimator } from "../../utils/TextGlitchAnimator.tsx";
 
 function AboutInfo() {
 
+    const textRef = useRef(null);
+        useEffect(() => {
+            //console.log('inside', reference)
+            console.log('text', textRef)
+            if (textRef.current) {
+                console.log('in use effect')
+                const animator = new TextEvolutionAnimator(textRef.current);
+    
+                animator.initialize();
+                animator.start();
+    
+                return () => {
+    
+                }
+            }
+        }, [textRef])
     return (
-        <div className="full md:half lg:screen-v-scroll flex row wrap relative">
+        <div ref={textRef} className="full md:half lg:screen-v-scroll flex row wrap relative">
             <div className="full md:py">
                 <header className="full noselect pl-1 svelte-11np3qp">
                     <div className="px md:py">

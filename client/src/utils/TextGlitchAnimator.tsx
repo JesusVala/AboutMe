@@ -28,7 +28,7 @@ export class TextEvolutionAnimator {
         //this.pointerEvents = pointerEvents;
 
         //Hardcoded values
-        this.duration = 5000;
+        this.duration = 3000;
         this.delay = 0; // maybe erased
         this.textNodes = [];
         this.originalNodeLengths = [];

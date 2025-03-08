@@ -9,8 +9,9 @@ function LandingPage() {
 
     const textRef = useRef(null);
     useEffect(() => {
+        console.log('usseEffect')
         if (textRef.current) {
-            console.log('in use effect')
+            console.log('in use effect in main')
             const animator = new TextEvolutionAnimator(textRef.current);
 
             animator.initialize();
@@ -20,7 +21,7 @@ function LandingPage() {
 
             }
         }
-    }, [])
+    }, [textRef])
 
     return (
         <>
@@ -28,7 +29,7 @@ function LandingPage() {
                 <div className="px">
                     <div className="flex row wrap">
                         <ResumeFunction />
-                        <AboutInfo />
+                        <AboutInfo reference={textRef}/>
                         <ProjectsLane />
                     </div>
                 </div>
