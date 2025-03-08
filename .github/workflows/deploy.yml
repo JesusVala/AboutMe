@@ -18,14 +18,15 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
 
-      - name: Install Deno
+      - name: Setup Deno environment
         uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
 
-      - name: Build step
-        run: "deno task build"
-        
+      - name: Build site
+        run: deno task build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
