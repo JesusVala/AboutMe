@@ -29,4 +29,4 @@ jobs:
         with:
           project: aboutme # the name of the project on Deno Deploy
           entrypoint: https://deno.land/std/http/file_server.ts
-          root: dist
+          root: "client/dist"
