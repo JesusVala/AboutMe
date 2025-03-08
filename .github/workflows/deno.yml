@@ -24,24 +24,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup repo
+      - name: Clone repository
         uses: actions/checkout@v4
 
-      - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@v2  # v1.1.2
-        with:
-          deno-version: v2.x
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v2
 
-      # Uncomment this step to verify the use of 'deno fmt' on each commit.
-      # - name: Verify formatting
-      #   run: deno fmt --check
-      - name: Build step
-        run: "deno task build"
+      - name: Build site
+        run: deno task build
 
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          project: ""
-          entrypoint: "main.tsx"
-          root: "."
+          path: "dist"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
