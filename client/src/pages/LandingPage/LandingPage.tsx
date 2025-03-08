@@ -29,7 +29,7 @@ function LandingPage() {
                 <div className="px">
                     <div className="flex row wrap">
                         <ResumeFunction />
-                        <AboutInfo reference={textRef}/>
+                        <AboutInfo />
                         <ProjectsLane />
                     </div>
                 </div>
