@@ -1,30 +1,14 @@
-import { useEffect, useRef } from "react";
-import { TextEvolutionAnimator } from "../../utils/TextGlitchAnimator.tsx";
+import GlitchedComponnent from "../../../components/GlitchedComponnent.tsx";
 
-function AboutInfo() {
+function Experience() {
 
-    const textRef = useRef(null);
-        useEffect(() => {
-            //console.log('inside', reference)
-            console.log('text', textRef)
-            if (textRef.current) {
-                console.log('in use effect')
-                const animator = new TextEvolutionAnimator(textRef.current);
-    
-                animator.initialize();
-                animator.start();
-    
-                return () => {
-    
-                }
-            }
-        }, [textRef])
     return (
-        <div ref={textRef} className="full md:half lg:screen-v-scroll flex row wrap relative">
+        <div className="full md:half lg:screen-v-scroll flex row wrap relative">
+            <GlitchedComponnent>
             <div className="full md:py">
                 <header className="full noselect pl-1 svelte-11np3qp">
                     <div className="px md:py">
-                        <div className="large title white svelte-11np3qp">About</div>
+                        <div className="large title white svelte-11np3qp">Experience</div>
                     </div>
                 </header>
                 <article className="pl-1 svelte-11np3qp">
@@ -86,8 +70,9 @@ function AboutInfo() {
                     <div className="y-space"></div>
                 </article>
             </div>
+            </GlitchedComponnent>
         </div>
     );
 }
 
-export default AboutInfo;
+export default Experience;
