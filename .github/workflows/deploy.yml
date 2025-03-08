@@ -12,6 +12,7 @@ jobs:
 
     permissions:
       id-token: write # Needed for auth with Deno Deploy
+      pages: write
       contents: read # Needed to clone the repository
 
     steps:
