@@ -14,11 +14,10 @@ function Hobbies() {
                     <article className="pl-1 svelte-11np3qp">
                         <div className="pad white flex col">
                             <div className="mb tweak-1 svelte-11np3qp">
-                                <em className="grey"> /* My Hobbies */ </em> <br />
                                 <em className="grey"> /* Martial Arts */ </em> <br />
                                 <em className="green">#martial-arts</em> {'{'}<br />
                                 <em className="yellow">disipline: </em> Taekwondo; <br />
-                                <em className="yellow">belt-color: </em> Black <br />
+                                <em className="yellow">belt-color: </em> Black; <br />
                                 <em className="yellow">skills: </em> Discipline, Focus, Perseverance, Respect, Fitness; <br />
                                 {'}'}
                                 <br /><br />

@@ -21,7 +21,7 @@ function Education() {
 
                                 institution <em className="blue">VARCHAR</em>(<em className="fuschia">255</em>)  <em className="blue">NOT NULL</em>, <br />
                                 duration <em className="blue">VARCHAR</em>(<em className="fuschia">50</em>)  <em className="blue">NOT NULL</em>, <br />
-                                location <em className="blue">VARCHAR</em>(<em className="fuschia">255</em>)  <em className="blue">NOT NULL</em>, <br />
+                                location <em className="blue">VARCHAR</em>(<em className="fuschia">255</em>)  <em className="blue">NOT NULL</em> <br />
                                 );
                                 <br /><br />
 
@@ -32,12 +32,12 @@ function Education() {
                                 <em className="orange">'Computational Systems Engineering'</em>, <br />
                                 <em className="orange">'Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO)'</em>, <br />
                                 <em className="orange">'2015 – 2020'</em>, <br />
-                                <em className="orange">'Guadalajara, Jalisco'</em>, <br />
+                                <em className="orange">'Guadalajara, Jalisco'</em> <br />
                                 );
                                 <br /><br />
 
                                 <em className="grey"> --Query Education Data </em> <br />
-                                <em className="blue">SELECT </em><em className="fuschia"> * </em><em className="blue"> FROM </em><em className="green"> Education </em>
+                                <em className="blue">SELECT </em><em className="fuschia"> * </em><em className="blue"> FROM </em><em className="green"> Education </em>; <br />
                                 
 
                             </div>
