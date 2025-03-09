@@ -28,6 +28,9 @@ jobs:
       - name: List files in client/dist
         run: ls -R client/dist
 
+      - name: Add .nojekyll file
+        run: touch client/dist/.nojekyll
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
