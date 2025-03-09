@@ -24,15 +24,6 @@ jobs:
 
       - name: Build site
         run: deno task build
-        
-      - name: Create cloudflare-pages branch if it doesn't exist
-        run: |
-          git checkout --orphan cloudflare-pages
-          git rm -rf .
-          echo "Initial commit" > README.md
-          git add README.md
-          git commit -m "Initial commit"
-          git push origin cloudflare-pages --force
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
