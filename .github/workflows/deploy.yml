@@ -38,9 +38,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./client/dist/
-          artifact-name: my-custom-artifact
+          name: my-custom-artifact
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          artifact-name: my-custom-artifact
+          artifact_name: my-custom-artifact
