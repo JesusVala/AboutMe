@@ -5,71 +5,72 @@ function Experience() {
     return (
         <div className="full md:half lg:screen-v-scroll flex row wrap relative">
             <GlitchedComponnent>
-            <div className="full md:py">
-                <header className="full noselect pl-1 svelte-11np3qp">
-                    <div className="px md:py">
-                        <div className="large title white svelte-11np3qp">Experience</div>
-                    </div>
-                </header>
-                <article className="pl-1 svelte-11np3qp">
-                    <div className="pad white flex col">
-                        <div className="mb tweak-1 svelte-11np3qp">
-                            With over 4 years of experience as a <em className="fuschia">Full-Stack Developer</em>, I’ve dedicated my career to crafting digital solutions that bridge creativity and functionality.
+                <div className="full md:py">
+                    <header className="full noselect pl-1 svelte-11np3qp">
+                        <div className="px md:py">
+                            <div className="large title white svelte-11np3qp">Experience</div>
+                        </div>
+                    </header>
+                    <article className="pl-1 svelte-11np3qp">
+                        <div className="pad white flex col">
+                            <div className="mb tweak-1 svelte-11np3qp">
+                                <em className="grey"> //Bosch Experience (2022 - Present) </em> <br />
+                                <em className="blue">function </em><em className="green">boschExperience</em>() {'{'} <br />
+                                <em className="blue">const </em><em className="yellow">details</em> = {'{'} <br />
+                                <em className="green">duration: </em><em className="orange">"2022 – Present",</em> <br />
+                                <em className="green">location: </em><em className="orange">"Guadalajara, Jalisco",</em> <br />
+                                <em className="green">role: </em><em className="orange">"Full-Stack Developer",</em> <br />
+                                <em className="green">achievements: </em>
+                                [<br />
+                                &nbsp;<em className="orange">"Developed chatbot interfaces for data interaction and process automation."</em>,<br />
+                                &nbsp;<em className="orange">"Implemented web-based solutions to improve internal workflows."</em>,<br />
+                                &nbsp;<em className="orange">"Maintained and enhanced a backend system using AI to classify email threats."</em>,<br />
+                                &nbsp;<em className="orange">"Managed multiple SQL databases and generated detailed reports."</em>,<br />
+                                &nbsp;<em className="orange">"Administered Azure cloud applications, optimizing resource costs."</em><br />
+                                &nbsp;]{'}'};
+                                <br />
+                                <em className="fuschia">return </em> <em className="blue">details</em>: <br />
+                                {'}'}
+                                <br /><br />
 
-                            <br /><br />
-                            At <em className="blue">Bosch</em>, I’ve brought ideas to life by developing intuitive chatbot interfaces that streamline data interaction and automate processes.
-                            I’ve also built and maintained backend systems powered by AI to classify potential email threats, ensuring security and efficiency.
-                            My work extends to managing SQL databases, generating insightful reports, and optimizing Azure cloud applications to reduce costs and improve performance.
-                            <br /><br />
-                            During my time at <em className="blue">Lubtrac</em>, I led a distributed team to design and develop web and mobile applications that transformed business operations.
-                            One of my proudest achievements was creating a mobile app for quotations that became so successful, it was sold as a standalone service.
-                            My ability to optimize critical business processes through technology has consistently delivered measurable results.
-                            <br /><br />
+                                <em className="grey"> //Lubtrac Experience (2021 - 2022) </em> <br />
+                                <em className="blue">function </em><em className="green">lubtracExperience</em>() {'{'} <br />
+                                <em className="blue">const </em><em className="yellow">details</em> = {'{'} <br />
+                                <em className="green">duration: </em><em className="orange">"2021 – 2022",</em> <br />
+                                <em className="green">location: </em><em className="orange">"Guadalajara, Jalisco",</em> <br />
+                                <em className="green">role: </em><em className="orange">"Full-Stack Developer",</em> <br />
+                                <em className="green">achievements: </em>
+                                [<br />
+                                &nbsp;<em className="orange">"Designed and developed web and mobile apps for business management."</em>,<br />
+                                &nbsp;<em className="orange">"Built a successful mobile app for quotations, later sold as a service."</em>,<br />
+                                &nbsp;<em className="orange">"Led a distributed team using Agile methodologies."</em>,<br />
+                                &nbsp;<em className="orange">"Optimized critical business processes through web platforms."</em>,<br />
+                                &nbsp;<em className="orange">"Created reports using SQL and NoSQL databases."</em><br />
+                                &nbsp;]{'}'};
+                                <br />
+                                <em className="fuschia">return </em> <em className="blue">details</em>: <br />
+                                {'}'}
+                                <br /><br />
 
-                            (<em className="yellow">My toolkit</em>) <span className="blue">{'=>'}</span> {'{'}
-                            <br />
-                            <span className="yellow"> Frontend:</span> [
-                            <span className="orange"> "JavaScript (ES6+)" </span>,
-                            <span className="orange"> "React.js" </span>,
-                            <span className="orange"> "Vue.js" </span>
-                            ]
-                            <br />
-
-                            <span className="yellow"> Backend:</span> [
-                            <span className="orange"> "Laravel" </span>,
-                            <span className="orange"> "PHP" </span>,
-                            <span className="orange"> "Node.js" </span>
-                            ]
-                            <br />
-
-                            <span className="yellow"> Databases:</span> [
-                            <span className="orange"> "MySQL" </span>,
-                            <span className="orange"> "PostgreSQL" </span>,
-                            <span className="orange"> "MongoDB" </span>
-                            ]
-                            <br />
-
-                            <span className="yellow"> Cloud:</span> [
-                            <span className="orange"> "Azure (Basic Administration)" </span>,
-                            <span className="orange"> "React.js" </span>,
-                            <span className="orange"> "Vue.js" </span>
-                            ]
-                            <br />
-
-                            <span className="yellow"> Tools:</span> [
-                            <span className="orange"> "Git" </span>,
-                            <span className="orange"> "REST APIs" </span>,
-                            <span className="orange"> "CI/CD" </span>,
-                            <span className="orange"> "Agile Methodologies" </span>
-                            ]
-                            <br />
-                            {'}'}
-                            <br /><br />
-                            Let’s collaborate and build something extraordinary.</div>
-                    </div>
-                    <div className="y-space"></div>
-                </article>
-            </div>
+                                <em className="grey"> //Agilgob Experience (2020) </em> <br />
+                                <em className="blue">function </em><em className="green">agilgobExperience</em>() {'{'} <br />
+                                <em className="blue">const </em><em className="yellow">details</em> = {'{'} <br />
+                                <em className="green">duration: </em><em className="orange">"2020",</em> <br />
+                                <em className="green">location: </em><em className="orange">"Guadalajara, Jalisco",</em> <br />
+                                <em className="green">role: </em><em className="orange">"Full-Stack Developer Jr",</em> <br />
+                                <em className="green">achievements: </em>
+                                [<br />
+                                &nbsp;<em className="orange">"Maintained government systems for seamless operations."</em>,<br />
+                                &nbsp;<em className="orange">"Developed new features to accommodate client use cases."</em><br />
+                                &nbsp;]{'}'};
+                                <br />
+                                <em className="fuschia">return </em> <em className="blue">details</em>: <br />
+                                {'}'}
+                            </div>
+                        </div>
+                        <div className="y-space"></div>
+                    </article>
+                </div>
             </GlitchedComponnent>
         </div>
     );
