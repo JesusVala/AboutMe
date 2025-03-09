@@ -8,6 +8,7 @@ import ProjectsLane from './components/ProjectsLane.tsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./components/NotFound.tsx";
 import Experience from "./components/Experience.tsx";
+import Education from "./components/Education.tsx";
 
 function LandingPage() {
 
@@ -41,7 +42,10 @@ function LandingPage() {
 
                                 <Route index element={<AboutInfo />} />
                                 <Route path="AboutMe" element={<AboutInfo />} />
+                                <Route path="education" element={<Education />} />
                                 <Route path="experience" element={<Experience />} />
+                                <Route path="hobbies" element={<NotFound />} />
+                                <Route path="contactme" element={<NotFound />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
                             <ProjectsLane />
