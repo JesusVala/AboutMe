@@ -25,11 +25,14 @@ jobs:
       - name: Build site
         run: deno task build
         
-      - name: List files in client/dist
-        run: ls -R client/dist
-
-      - name: Add .nojekyll file
-        run: touch client/dist/.nojekyll
+      - name: Create cloudflare-pages branch if it doesn't exist
+        run: |
+          git checkout --orphan cloudflare-pages
+          git rm -rf .
+          echo "Initial commit" > README.md
+          git add README.md
+          git commit -m "Initial commit"
+          git push origin cloudflare-pages --force
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
