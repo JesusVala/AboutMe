@@ -8,7 +8,7 @@ function Experience() {
                 <div className="full md:py">
                     <header className="full noselect pl-1 svelte-11np3qp">
                         <div className="px md:py">
-                            <div className="large title white svelte-11np3qp">Experience</div>
+                            <div className="large title white svelte-11np3qp">Experience.js</div>
                         </div>
                     </header>
                     <article className="pl-1 svelte-11np3qp">

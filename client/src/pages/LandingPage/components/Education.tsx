@@ -8,7 +8,7 @@ function Education() {
                 <div className="full md:py">
                     <header className="full noselect pl-1 svelte-11np3qp">
                         <div className="px md:py">
-                            <div className="large title white svelte-11np3qp">Education</div>
+                            <div className="large title white svelte-11np3qp">Education.sql</div>
                         </div>
                     </header>
                     <article className="pl-1 svelte-11np3qp">

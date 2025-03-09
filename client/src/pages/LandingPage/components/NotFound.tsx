@@ -9,16 +9,17 @@ function NotFound() {
                 <div className="full md:py">
                     <header className="full noselect pl-1 svelte-11np3qp">
                         <div className="px md:py">
-                            <div className="large title white svelte-11np3qp">404: Page Not Found</div>
+                            <div className="large title white svelte-11np3qp">page_not_found.md</div>
                         </div>
                     </header>
                     <article className="pl-1 svelte-11np3qp">
                         <div className="pad white flex col">
                             <div className="mb tweak-1 svelte-11np3qp">
-                                Oops! It looks like you’ve stumbled into the void.
-                                Don’t worry, I’m a <em className="blue">Full-Stack Developer</em>. I can help!
+                                <p>
+                                Oops! It looks like you’ve stumbled into the void. <br />
+                                Don’t worry, I’m a <em className="blue">Full-Stack Developer</em>. I can help!</p>
 <br />
-                                Here’s what might have happened: <br />
+                                <p>Here’s what might have happened: </p><br />
                                 - The page you’re looking for got lost in the cloud. <br />
                                 - A rogue semicolon broke the link. <br />
                                 - The backend ate your <em className="blue">request</em> (<em className="green">it does that sometimes</em>). <br />
