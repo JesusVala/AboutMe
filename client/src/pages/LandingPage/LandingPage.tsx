@@ -39,6 +39,7 @@ function LandingPage() {
                             <Routes>
 
                                 <Route index element={<AboutInfo />} />
+                                <Route path="AboutMe" element={<AboutInfo />} />
                                 <Route path="experience" element={<ProjectsLane />} />
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
