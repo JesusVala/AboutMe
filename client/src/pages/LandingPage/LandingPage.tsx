@@ -1,15 +1,14 @@
 import '../../styles/css/landing.css';
 import ResumeFunction from './components/ResumeFunction.tsx';
-import AboutInfo from './components/AboutInfo.tsx';
-import ProjectsLane from './components/ProjectsLane.tsx'
-//import { useEffect, useRef } from "react";
-//import { TextEvolutionAnimator } from "../../utils/TextGlitchAnimator.tsx";
-//import GlitchedComponnent from '../../components/GlitchedComponnent.tsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NotFound from "./components/NotFound.tsx";
-import Experience from "./components/Experience.tsx";
-import Education from "./components/Education.tsx";
-import Hobbies from "./components/Hobbies.tsx";
+import { lazy, Suspense } from "react";
+
+const AboutInfo = lazy(() => import('./components/AboutInfo.tsx'));
+const ProjectsLane = lazy(() => import("./components/ProjectsLane.tsx"));
+const NotFound = lazy(() => import("./components/NotFound.tsx"));
+const Experience = lazy(() => import('./components/Experience.tsx'));
+const Education = lazy(() => import("./components/Education.tsx"));
+const Hobbies = lazy(() => import("./components/Hobbies.tsx"));
 
 function LandingPage() {
 
@@ -38,18 +37,19 @@ function LandingPage() {
 
 
                         <BrowserRouter>
-                            <ResumeFunction />
-                            <Routes>
-
-                                <Route index element={<AboutInfo />} />
-                                <Route path="AboutMe" element={<AboutInfo />} />
-                                <Route path="education" element={<Education />} />
-                                <Route path="experience" element={<Experience />} />
-                                <Route path="hobbies" element={<Hobbies />} />
-                                <Route path="contactme" element={<NotFound />} />
-                                <Route path="*" element={<NotFound />} />
-                            </Routes>
-                            <ProjectsLane />
+                            <Suspense fallback={<div>...</div>}>
+                                <ResumeFunction />
+                                <Routes>
+                                    <Route index element={<AboutInfo />} />
+                                    <Route path="AboutMe" element={<AboutInfo />} />
+                                    <Route path="education" element={<Education />} />
+                                    <Route path="experience" element={<Experience />} />
+                                    <Route path="hobbies" element={<Hobbies />} />
+                                    <Route path="contactme" element={<NotFound />} />
+                                    <Route path="*" element={<NotFound />} />
+                                </Routes>
+                                <ProjectsLane />
+                            </Suspense>
                         </BrowserRouter>
 
                     </div>
